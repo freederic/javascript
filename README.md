@@ -39,6 +39,12 @@ les variables
 - https://fr.wikipedia.org/wiki/Variable_(informatique)
 
 
+## où faire du javascript ?
+
+- dans l'onglet console de votre navigateur
+- dans un fichier javascript, lié à un fichier html que vous aurez lié ( regarder la balise ```<script>```)
+- dans des éditeur de texte en ligne comme [CodeSandbox](https://codesandbox.io/dashboard)
+
 
 ## TP Variables
 
