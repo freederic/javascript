@@ -15,7 +15,8 @@ pour les ressources pratiques :
 
 
 ### exercices EN
-- https://www.codecademy.com/learn/introduction-to-javascripthttps://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
+- https://www.codecademy.com/learn/introduction-to-javascript
+- https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
 
 
 ### Des exemples simples 
@@ -51,14 +52,14 @@ Ressources
 Instructions
 ----
 
-- créez une variable avec votre âge
-- créez une autre variable avec votre date de naissance
-- créez une troisième variable qui contient la somme des deux.
-- faites un console.log de cette troisième variable pour vérifier le résultat
+- créez une **variable** avec votre **âge**
+- créez une autre **variable** avec votre **date de naissance**
+- créez une troisième **variable** qui contient la **somme des deux**.
+- faites un ```console.log``` de cette troisième variable pour **vérifier le résultat**
   
 Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner avec des valeurs directement ( en utilisant plusieurs fois l'opérateur + par exemple )
-- créez une variable avec votre prénom
-- créez une autre variable avec votre nom
-- créez une variable qui contient votre nom et prénom avec un espace séparant les deux ( interdit de mettre l'espace dans le prénom :wink: ) 
-- faites un console.log de cette troisième variable pour vérifier le résultat
+- créez une **variable** avec votre **prénom**
+- créez une autre **variable** avec votre **nom**
+- créez une **variable** qui contient votre nom et prénom ( en utilisant les deux premières variables ) avec un **espace** séparant les deux ( interdit de mettre l'espace dans le prénom :wink: ) 
+- faites un ```console.log``` de cette **troisième** variable pour **vérifier le résultat**
 
