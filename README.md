@@ -21,7 +21,18 @@ pour les ressources pratiques :
 ### Des exemples simples 
 - https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
   
-  
+
 Pour la lecture et la compréhension 
 ----
 [cours OpenClassrooms](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript)
+
+
+
+les variables 
+----
+
+- https://www.culture-informatique.net/japprends-a-programmer-variables/
+- http://pise.info/algo/variables.htm
+- http://prof.bpesquet.fr/cours/variables/
+
+- https://fr.wikipedia.org/wiki/Variable_(informatique)
