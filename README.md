@@ -28,7 +28,17 @@ Pour la lecture et la compréhension
 
 
 
-les variables 
+
+# où faire du javascript ?
+
+- dans l'onglet console de votre navigateur
+- dans un fichier javascript, lié à un fichier html que vous aurez lié ( regarder la balise ```<script>```)
+- dans des éditeur de texte en ligne comme [CodeSandbox](https://codesandbox.io/dashboard)
+
+
+# TP Variables
+
+Ressources
 ----
 - http://www.coursweb.ch/javascript/variables.html
 
@@ -38,25 +48,17 @@ les variables
 
 - https://fr.wikipedia.org/wiki/Variable_(informatique)
 
-
-## où faire du javascript ?
-
-- dans l'onglet console de votre navigateur
-- dans un fichier javascript, lié à un fichier html que vous aurez lié ( regarder la balise ```<script>```)
-- dans des éditeur de texte en ligne comme [CodeSandbox](https://codesandbox.io/dashboard)
-
-
-## TP Variables
-
 Instructions
 ----
 
-- créez une variable avec votre age
+- créez une variable avec votre âge
 - créez une autre variable avec votre date de naissance
 - créez une troisième variable qui contient la somme des deux.
+- faites un console.log de cette troisième variable pour vérifier le résultat
   
 Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner avec des valeurs directement ( en utilisant plusieurs fois l'opérateur + par exemple )
 - créez une variable avec votre prénom
 - créez une autre variable avec votre nom
 - créez une variable qui contient votre nom et prénom avec un espace séparant les deux ( interdit de mettre l'espace dans le prénom :wink: ) 
+- faites un console.log de cette troisième variable pour vérifier le résultat
 
