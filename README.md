@@ -15,7 +15,7 @@ exercices (FR)
 
 
 exercices EN
-- https://www.codecademy.com/learn/introduction-to-javascript)
+- https://www.codecademy.com/learn/introduction-to-javascript
 
 Pour la lecture et la compréhension 
 ----
