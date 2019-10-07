@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/adrar-tps/javascript/static/css/main.b100e6da.chunk.css",
+    "main.js": "/adrar-tps/javascript/static/js/main.d48be4f1.chunk.js",
+    "main.js.map": "/adrar-tps/javascript/static/js/main.d48be4f1.chunk.js.map",
+    "runtime-main.js": "/adrar-tps/javascript/static/js/runtime-main.fafe512d.js",
+    "runtime-main.js.map": "/adrar-tps/javascript/static/js/runtime-main.fafe512d.js.map",
+    "static/js/2.48fc76bc.chunk.js": "/adrar-tps/javascript/static/js/2.48fc76bc.chunk.js",
+    "static/js/2.48fc76bc.chunk.js.map": "/adrar-tps/javascript/static/js/2.48fc76bc.chunk.js.map",
+    "index.html": "/adrar-tps/javascript/index.html",
+    "precache-manifest.d01538eab9a6f439ff01ca3030d20c68.js": "/adrar-tps/javascript/precache-manifest.d01538eab9a6f439ff01ca3030d20c68.js",
+    "service-worker.js": "/adrar-tps/javascript/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/adrar-tps/javascript/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/adrar-tps/javascript/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fafe512d.js",
+    "static/js/2.48fc76bc.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.d48be4f1.chunk.js"
+  ]
+}
