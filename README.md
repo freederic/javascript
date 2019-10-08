@@ -200,8 +200,10 @@ Instructions:
 -----
  - créez une **fonction** qui execute ```console.log('hello world')``` et appelez la
  - créez une **fonction** qui **retourne** la valeur **42**, et **stockez la dans une variable** ( puis faites un console log de cette variable )
- - créez une **fonction** qui **ajoute 3** à un **nombre** qui sera un **paramètre**
- - creez une **fonction** qui prend age et année de naissance en paramètre, et retourne la somme des deux
+ - créez une **fonction** qui **ajoute 3** à un **nombre** qui sera un **paramètre**, et qui fait un **console.log** du **résultat**
+ - creez une **fonction** qui prend age et année de naissance en paramètre, et retourne la somme des deux;
+ - faites un **console.log** du **résultat**
  - creez une **fonction** qui prend **prenom** et **nom** en **paramètres**, et retourne la somme des deux ( avec l'espace ;) )
+ - faites un **console.log** du **résultat**
 
 
