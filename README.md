@@ -41,6 +41,8 @@ Pour la lecture et la compréhension
 
 Ressources
 ----
+
+- [voir la syntaxe, les mots clef etc ](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference)
 - http://www.coursweb.ch/javascript/variables.html
 
 - https://www.culture-informatique.net/japprends-a-programmer-variables/
@@ -209,13 +211,48 @@ Instructions:
 
 # TP les opérateurs et les types 
 
-En javascript, comme dans les autres langages, il existe différents opérateurs, et différents types.
-Ces deux notions sont différentes en soi, mais il sera plus facile de montrer les particularités de certains types avec les opérateurs.
+## Contexte 
+En javascript, comme dans les autres langages, il existe différents **opérateurs**, et différents **types**.
+Ces deux notions sont différentes en soi, mais il sera plus facile de montrer les **particularités** de certains **types** avec les **opérateurs**.
 
-Le type String
-----
-Ce type désigne les chaînes de caractères.
-Lorsqu'on veut écrire une ```String```, on utilisera les **" "** pour signifier au **moteur javascript** que tout ce qui se trouve **dedans** est à prendre comme une seule **valeur**, on pourra donc y mettre des espaces !
+## Liste des opérateurs de base :
+
+```javascript 
+//  additionner
+3 + 4
+
+//  soustraire
+5 - 2 
+
+//  diviser
+5 / 2
+
+//  multiplier
+6 * 5
+
+// est plus grand que 
+3 > 4
+
+// est plus petit que
+3 < 4
+
+// est égal à
+4 == 4   
+
+// est STRICTEMENT égal à
+3 === 5  
+
+// ou 
+estMajeur || estAccompagne
+// et  
+estMajeur && aSonPermisDeConduire
+
+```
+
+## Le type String
+
+Ce type désigne les __chaînes de caractères__.
+Lorsqu'on veut écrire une ```String```, on utilisera les **" "** ( ou les **' '**) pour signifier au **moteur javascript** que tout ce qui se trouve **dedans** est à prendre comme une seule **valeur**, on pourra donc y mettre des espaces !
 
 Ce sont les **guillemets** qui permettent également de comprendre qu'il ne doit pas chercher une variable du même nom..
 
@@ -229,7 +266,7 @@ var nom = max // Il manque les quote, du coup là le programme cherche une varia
 var nom = 'max' // ah là c'est ok !
 ```
 
-:warning: Il est possible d'utiliser les simple quotes '' ou doubles "" en javascript ! Mais si vous démarrez une ```String``` avec l'un des deux, il faudra clore la ```String``` avec le même symbole..
+:warning: Il est possible d'utiliser les simple quotes ' ' ou doubles " " en javascript ! Mais si vous démarrez une ```String``` avec l'un des deux, il faudra clore la ```String``` avec le même symbole..
 
 ```javascript 
 var nom = 'max' // c'est ok !
@@ -243,9 +280,35 @@ var phraseAvecApoStrophe = "Bonjour je m'appelle Maximilien";
 
 ```
 
+### Les opérateurs pour le type string 
 
-Le type Number.
-----
+On peut additionner pluseurs string ensemble: 
+```javascript 
+var prenom = 'Max'
+var nom = 'Ga'
+var nomComplet = prenom + ' ' + nom
+// nomComplet = 'Max Ga"
+
+var jeDisBonjour = "Coucou je m'appelle " + prenom;
+// jeDisBonjour = "Coucou je m'appelle Max";
+```
+On peut égalment comparer des strings entre elles :
+
+```javascript 
+var prenom = 'Max'
+var nom = 'Ga'
+var estCeQueMonNomVautMonPrenom = prenom == nom ;
+// nomComplet = 'Max Ga"
+
+var jeDisBonjour = "Coucou je m'appelle " + prenom;
+// jeDisBonjour = "Coucou je m'appelle Max";
+```
+
+
+---
+## Le type Number.
+
+
 Ce sont les nombres, des valeurs exclusivement numériques. On pourra donc écrire directement les nombres dans le code.
 
 
