@@ -75,7 +75,7 @@ Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est 
 Si j'ai une **fonction** ```faireDesCrepes```, elle contiendra toutes les instructions pour faire des crêpes, la recette à appliquer étant toujours la même ( les étapes ne varient pas ).
 
 
-On utilise le mot clef ```function``` pour déclarer une fonction, et on lui donne un **nom** ( comme pour les **variables** ). les **parenthèses** servent à définir l'espace dans lequel on proposera éventuellement des paramètres ( on explique ça dans la prochaine section !), et les **accolades** délimitent les instructions qui seront contenues dans la fonction.
+On utilise le mot clef ```function``` pour déclarer une fonction, et on lui donne un **nom** ( comme pour les **variables** ). les **parenthèses** servent à définir l'espace dans lequel on proposera éventuellement des paramètres ( on explique ça dans la prochaine section !), et les **accolades** délimitent les instructions qui seront contenues dans la fonction ( pour info on appelle ça le **scope** d'une fonction )
 
 ```javascript
 function compterLesMoutons() {
@@ -110,7 +110,7 @@ function additionneTroisACinqGOODvariationAvecVariable() {
 }
 
 ```
-pour preuve, si je stocke le résultat de mes deux functions dans deux variables, j'aurai :
+pour preuve, si je stocke le résultat de mes **deux fonctions** dans **deux variables**, j'aurai :
 
 ```javascript
 var result1 =  additionneTroisACinqBAD();
@@ -120,11 +120,11 @@ var result2 =  additionneTroisACinqGOOD();
 
 ```
 
-essayez par vous-même dans un fichier javascript, en loggant les variables.
+Essayez par vous-même dans un fichier javascript, en loggant les variables **result1** et **result2**
 
-Ici, la première variable est ```undefined``` car la function ne renvoie ( retourne ) rien ! 
+Ici, la première **variable** est ```undefined``` car la **fonction** ne **renvoie** ( retourne ) rien ! 
 
-:warning: une variable créée dans une function n'existera que dans cette function, ex :
+:warning: une **variable créée dans une fonction** n'existera que dans cette fonction, ex :
 
 ```javascript
 function faisQqch() {
@@ -135,7 +135,7 @@ function faisQqch() {
 console.log(dansMaFunction) // renvoie une error car ici, dansMaFunction n'est plus défini ! 
 ```
 
-:warning: toute instruction écrite après un return ne sera jamais prise en compte, car ```return``` à la particularité de stopper l'éxecution de la fonction, c'est la dernière instruction possible :warning:
+:warning: toute instruction écrite **après** un ```return``` ne sera jamais prise en compte, car ```return``` a la particularité de **stopper** l'éxecution de la fonction, c'est la __**dernière instruction possible**__ :warning:
 
 ```javascript
 function proposeDuCodeJamaisExecute() {
