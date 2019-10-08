@@ -64,10 +64,7 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 - faites un ```console.log``` de cette **troisième** variable pour **vérifier le résultat**
 
 
-
-
 # TP Function
-
 
 Contexte 
 -----
@@ -93,13 +90,7 @@ pour appeler une function, on procède ainsi :
 compterLesMoutons();
 ```
 
-
-
-Si une instruction fait un calcul dont le résultat nous intéresse, et qu'on aimera le stocker dans une variable, on utilisera le mot-clef 
-```javascript
-return
-```
-cette function retournera alors la valeur après le return 
+Si une instruction fait un calcul dont le résultat nous intéresse, et qu'on aimera le stocker dans une variable, on utilisera le mot-clef ```return```, cette function retournera alors la valeur après le return 
 
 ```javascript
 // ici, le calcul est fait mais on ne peut rien en faire :(
@@ -126,14 +117,23 @@ essayez par vous-même dans un fichier javascript, en loggant les variables.
 
 Ici, la première variable est ```undefined``` car la function ne renvoie ( retourne ) rien ! 
 
+:warning: une variable créée dans une function n'existera que dans cette function, ex :
 
+```javascript
+function faisQqch() {
+    var dansMaFunction = 3;
+    console.log(dansMaFunction) // dansMaFunction = 3, car je suis encore dans la function
+
+}
+console.log(dansMaFunction) // renvoie une error car ici, dansMaFunction n'est pas défini ! 
+```
 
 
 Instructions:
 -----
- - créez une **function** qui execute console.log('bonjour') et appelez la
- - créez une **function** qui retourne la valeur 42, et stockez la dans une variable ( puis faites un console log de cette variable )
+ - créez une **function** qui execute ```console.log('hello world')``` et appelez la
+ - créez une **function** qui **retourne** la valeur **42**, et **stockez la dans une variable** ( puis faites un console log de cette variable )
  - créez une **function** qui ajoute 3 à un nombre en paramètre
  - creez une **function** qui prend age et année de naissance en paramètre, et retourne la somme des deux
- - creez une **function** qui prend prenom et nom en paramètre, et retourne la somme des deux ( avec l'espace ;) )
+ - creez une **function** qui prend **prenom** et **nom** en **paramètre**, et retourne la somme des deux ( avec l'espace ;) )
  - 
