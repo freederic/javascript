@@ -68,23 +68,72 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 
 # TP Function
 
-Ressources
-----
-
 
 Contexte 
 -----
 
-Une function est un élément du langage javascript qui permet de contenir et d'éxecuter plusieurs instruction à la suite. 
-Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est l'équivalent d'une recette de cuisine.
+Une **function** est un élément du langage javascript qui permet de **contenir et d'éxecuter une ou plusieurs instructions** à la suite. 
+Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est **l'équivalent d'une recette de cuisine**.
 
-Si j'ai une function faireDesCrepes, elle contiendra toutes les instructions pour faire des crêpes, la recette étant identique.
+Si j'ai une **function** ```faireDesCrepes```, elle contiendra toutes les instructions pour faire des crêpes, la recette étant identique.
+
+
+On utilise le mot clef ```function``` pour déclarer une fonction, et on lui donne un **nom** ( comme pour les **variables** ). les **parenthèses** servent à définir l'espace dans lequel on proposera éventuellement des paramètres , et les **accolades** bornent les instructions qui seront contenues dans la function.
+
+```javascript
+function compterLesMoutons() {
+    console.log('ZzzZzzzZZz');
+}
+```
+Pour l'instant, la function est seulement déclarée.
+On dit qu'on appelle une function lorsqu'on veut l'éxecuter.
+
+pour appeler une function, on procède ainsi : 
+```javascript
+compterLesMoutons();
+```
+
+
+
+Si une instruction fait un calcul dont le résultat nous intéresse, et qu'on aimera le stocker dans une variable, on utilisera le mot-clef 
+```javascript
+return
+```
+cette function retournera alors la valeur après le return 
+
+```javascript
+// ici, le calcul est fait mais on ne peut rien en faire :(
+function additionneTroisACinqBAD() {
+    3 + 5;
+}
+// ici, le calcul est renvoyé, on peut donc le capturer dans une variable par exemple !
+function additionneTroisACinqGOOD() {
+    return 3 + 5;
+}
+
+```
+pour preuve, si je stocke le résultat de mes deux functions dans deux variables, j'aurai :
+
+```javascript
+var result1 =  additionneTroisACinqBAD();
+// result1 = undefined;
+var result2 =  additionneTroisACinqGOOD();
+// result2 = 8;
+
+```
+
+essayez par vous-même dans un fichier javascript, en loggant les variables.
+
+Ici, la première variable est ```undefined``` car la function ne renvoie ( retourne ) rien ! 
+
+
+
 
 Instructions:
 -----
- - créez une function qui execute console.log('bonjour') et appelez la
- - céez une function qui retourne la valeur 42, et stockez la dans une variable ( puis faites un console log de cette variable )
- - créez une function qui ajoute 3 à un nombre en paramètre
- - creez une function qui prend age et année de naissance en paramètre, et retourne la somme des deux
- - creez une function qui prend prenom et nom en paramètre, et retourne la somme des deux ( avec l'espace ;) )
+ - créez une **function** qui execute console.log('bonjour') et appelez la
+ - créez une **function** qui retourne la valeur 42, et stockez la dans une variable ( puis faites un console log de cette variable )
+ - créez une **function** qui ajoute 3 à un nombre en paramètre
+ - creez une **function** qui prend age et année de naissance en paramètre, et retourne la somme des deux
+ - creez une **function** qui prend prenom et nom en paramètre, et retourne la somme des deux ( avec l'espace ;) )
  - 
