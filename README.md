@@ -53,7 +53,7 @@ Instructions
 ----
 
 - créez une **variable** avec votre **âge**
-- créez une autre **variable** avec votre **date de naissance**
+- créez une autre **variable** avec votre **année de naissance**
 - créez une troisième **variable** qui contient la **somme des deux**.
 - faites un ```console.log``` de cette troisième variable pour **vérifier le résultat**
   
@@ -63,3 +63,28 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 - créez une **variable** qui contient votre nom et prénom ( en utilisant les deux premières variables ) avec un **espace** séparant les deux ( interdit de mettre l'espace dans le prénom :wink: ) 
 - faites un ```console.log``` de cette **troisième** variable pour **vérifier le résultat**
 
+
+
+
+# TP Function
+
+Ressources
+----
+
+
+Contexte 
+-----
+
+Une function est un élément du langage javascript qui permet de contenir et d'éxecuter plusieurs instruction à la suite. 
+Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est l'équivalent d'une recette de cuisine.
+
+Si j'ai une function faireDesCrepes, elle contiendra toutes les instructions pour faire des crêpes, la recette étant identique.
+
+Instructions:
+-----
+ - créez une function qui execute console.log('bonjour') et appelez la
+ - céez une function qui retourne la valeur 42, et stockez la dans une variable ( puis faites un console log de cette variable )
+ - créez une function qui ajoute 3 à un nombre en paramètre
+ - creez une function qui prend age et année de naissance en paramètre, et retourne la somme des deux
+ - creez une function qui prend prenom et nom en paramètre, et retourne la somme des deux ( avec l'espace ;) )
+ - 
