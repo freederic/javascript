@@ -207,3 +207,66 @@ Instructions:
  - faites un **console.log** du **résultat**
 
 
+# TP les opérateurs et les types 
+
+En javascript, comme dans les autres langages, il existe différents opérateurs, et différents types.
+Ces deux notions sont différentes en soi, mais il sera plus facile de montrer les particularités de certains types avec les opérateurs.
+
+Le type String
+----
+Ce type désigne les chaînes de caractères.
+Lorsqu'on veut écrire une ```String```, on utilisera les **" "** pour signifier au **moteur javascript** que tout ce qui se trouve **dedans** est à prendre comme une seule **valeur**, on pourra donc y mettre des espaces !
+
+Ce sont les **guillemets** qui permettent également de comprendre qu'il ne doit pas chercher une variable du même nom..
+
+On utilise le terme **"quote"** pour parler des guillemets ( to quote en anglais = citer )
+
+```javascript
+var bonjour = 'hello tout le monde !' // espaces autorisés :)
+
+var nom = max // Il manque les quote, du coup là le programme cherche une variable max 
+
+var nom = 'max' // ah là c'est ok !
+```
+
+:warning: Il est possible d'utiliser les simple quotes '' ou doubles "" en javascript ! Mais si vous démarrez une ```String``` avec l'un des deux, il faudra clore la ```String``` avec le même symbole..
+
+```javascript 
+var nom = 'max' // c'est ok !
+var nom = "max' // pas ok, d'ailleurs on voit le commentaire comme faisant partie de la String, on la ferme donc avec ... =>" // et là je suis de nouveau en commentaire.
+
+// vous avez remarqué ? on peut mettre des doubles quotes pour inclure des simples quotes.
+// Eh oui, en français, on utilise déjà les simples quote, qu'on appelle apostrophe. Wrapper le tout dans des doubles quote nous donne le confort d'utiliser les apostrophes sans que javascript essaye d'ouvrir ou de fermer des string !
+ex : 
+
+var phraseAvecApoStrophe = "Bonjour je m'appelle Maximilien";
+
+```
+
+
+Le type Number.
+----
+Ce sont les nombres, des valeurs exclusivement numériques. On pourra donc écrire directement les nombres dans le code.
+
+
+```javascript 
+var age = 18; // ici 18 n'est composé que de valeurs numériques, c'est donc un number !
+```
+
+Le type Number permet d'utiliser les opérateurs liés aux opérations mathématiques: 
+
+```javascript
+// +
+var anneeDeNaissance = 1990;
+var age = 29;
+var annee = anneeDeNaissance + age;
+// annee vaudra 2019
+
+// -
+var anneeEnCours = 2019;
+var autreAge = 33;
+var autreAnneeDeNaissance = anneeEnCours - autreAge;
+// autreAnneeDeNaissance vaudra 1986
+
+
+```
