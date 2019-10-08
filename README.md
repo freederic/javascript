@@ -69,28 +69,28 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 Contexte 
 -----
 
-Une **function** est un élément du langage javascript qui permet de **contenir et d'éxecuter une ou plusieurs instructions** à la suite. 
+Une **fonction** est un élément du langage javascript qui permet de **contenir et d'éxecuter une ou plusieurs instructions** à la suite. 
 Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est **l'équivalent d'une recette de cuisine**.
 
-Si j'ai une **function** ```faireDesCrepes```, elle contiendra toutes les instructions pour faire des crêpes, la recette étant identique.
+Si j'ai une **fonction** ```faireDesCrepes```, elle contiendra toutes les instructions pour faire des crêpes, la recette à appliquer étant toujours la même ( les étapes ne varient pas ).
 
 
-On utilise le mot clef ```function``` pour déclarer une fonction, et on lui donne un **nom** ( comme pour les **variables** ). les **parenthèses** servent à définir l'espace dans lequel on proposera éventuellement des paramètres , et les **accolades** bornent les instructions qui seront contenues dans la function.
+On utilise le mot clef ```function``` pour déclarer une fonction, et on lui donne un **nom** ( comme pour les **variables** ). les **parenthèses** servent à définir l'espace dans lequel on proposera éventuellement des paramètres ( on explique ça dans la prochaine section !), et les **accolades** délimitent les instructions qui seront contenues dans la fonction.
 
 ```javascript
 function compterLesMoutons() {
     console.log('ZzzZzzzZZz');
 }
 ```
-Pour l'instant, la function est seulement déclarée.
-On dit qu'on appelle une function lorsqu'on veut l'éxecuter.
+Pour l'instant, la **fonction** est seulement **déclarée**.
+On dit qu'on **appelle** une **fonction** lorsqu'on veut l'**éxecuter**.
 
-pour appeler une function, on procède ainsi : 
+pour **appeler une fonction**, on **procède** ainsi : 
 ```javascript
 compterLesMoutons();
 ```
 
-Si une instruction fait un calcul dont le résultat nous intéresse, et qu'on aimera le stocker dans une variable, on utilisera le mot-clef ```return```, cette function retournera alors la valeur après le return 
+Si une instruction fait un **calcul** dont le **résultat nous intéresse**, et qu'on aimera le **récupérer** pour s'en **servir** ( on pourra par exemple le **stocker dans une variable** ) : en **utilisant** le mot-clef ```return```, cette function retournera alors la **valeur / variable** écrite après le ```return``` 
 
 ```javascript
 // ici, le calcul est fait mais on ne peut rien en faire :(
@@ -100,6 +100,13 @@ function additionneTroisACinqBAD() {
 // ici, le calcul est renvoyé, on peut donc le capturer dans une variable par exemple !
 function additionneTroisACinqGOOD() {
     return 3 + 5;
+}
+
+// on peut renvoyer une variable depuis la fonction !
+// ici cette fonction est équivalente à celle juste au dessus, on a juste découplé l'instruction de calcul de l'instruction du return.
+function additionneTroisACinqGOODvariationAvecVariable() {
+    var result = 3 + 5;
+    return result;
 }
 
 ```
@@ -123,18 +130,38 @@ Ici, la première variable est ```undefined``` car la function ne renvoie ( reto
 function faisQqch() {
     var dansMaFunction = 3;
     console.log(dansMaFunction) // dansMaFunction = 3, car je suis encore dans la function
-
 }
-console.log(dansMaFunction) // renvoie une error car ici, dansMaFunction n'est pas défini ! 
+
+console.log(dansMaFunction) // renvoie une error car ici, dansMaFunction n'est plus défini ! 
 ```
+
+:warning: toute instruction écrite après un return ne sera jamais prise en compte, car ```return``` à la particularité de stopper l'éxecution de la fonction, c'est la dernière instruction possible :warning:
+
+```javascript
+function proposeDuCodeJamaisExecute() {
+    console.log('start') //ok
+    return;
+    console.log('end') // ce code est inaccessible car le return arrête la lecture des instructions.
+}
+
+proposeDuCodeJamaisExecute()
+// start sera loggé 
+// end ne sera pas loggé
+```
+
+
+
 ### Les paramètres
 
-Les **paramètres** permettent de rendre les functions un petit peu plus **souples**.
-**Au lieu** de lui faire faire **systématiquement** le **même** calcul, et donc de lui demander de **connaitre à l'avance** les valeurs avec lesquelles elle devra lancer ses instructions, on lui propose d'appliquer un traitement identique sur une ou plusieurs "variables", dont **elle ne connait pas encore les valeurs**. **Ces "variables" sont les paramètres**.
+Les **paramètres** permettent de rendre les fonctions un petit peu plus **souples**.
 
-Au moment de l'éxecution, **lorsque** l'on **appellera** la function, le(s) **paramètre**(s) aura/auront alors la/les **valeur**(s) qui lui a/ont été donnée(s) lors de l'appel.
+**Au lieu** d'écrire une fonction qui ferait **systématiquement** le **même** calcul, et donc de lui demander de **connaitre à l'avance** les valeurs avec lesquelles elle devra lancer ses instructions, **on lui propose plutôt** d'appliquer un traitement identique sur une ou plusieurs "variables", dont **elle ne connait pas encore les valeurs**. **Ces "variables" sont les paramètres**. 
 
-On a l'équivalent en math :
+**Comme pour les variables**, c'est **nous** qui choisissons le **nom des paramètres**, l'idée étant d'être **le plus explicite** possible pour indiquer le **but** de la fonction.
+
+Au moment de l'éxecution, **lorsque** l'on **appellera** la fonction, le(s) **paramètre**(s) aura/auront alors la/les **valeur**(s) qui lui a/ont été donnée(s) lors de l'appel.
+
+### équivalent en math : ( seulement si ça vous aide ;) )
 
 ```f(x) = x + 2 ```
 
@@ -144,20 +171,20 @@ On a l'équivalent en math :
 
 ( ici on appelle f et on fixe la valeur de x à 3 juste pour cette fois.)
 
+### exemples en javascript :
 
 ```javascript
-
-
-
 function donneMonAge(annee) {
 	var anneeEnCours = 2019;
-    // ici annee n'a pas de valeur particulière, c'est lors de l'appel qu'on le fixera.
+    // ici le paramètre nommé Zannee n'a pas de valeur particulière, c'est lors de l'appel qu'on le fixera.
     // ceci dit on veut quand même pouvoir décrire ce qu'on veut faire de ce paramètre, il faut donc lui donner un nom pour le manipuler :)
 	return anneeEnCours - annee;
 }
+
 var anneeDeNaissance1 = 1970;
 var anneeDeNaissance1 = 1967;
-// j'appelle mes deux fonctions, en leur passant une valeur différente ( stockée dans les deux variable)
+
+// j'appelle autant de fois que je veux ma fonction, en lui passant par exemple une valeur différente à chaque appel ( stockée dans les deux variables déclarées juste au dessus )
 const age1 = donneMonAge(anneeDeNaissance1);
 const age2 = donneMonAge(anneeDeNaissance2);
 
@@ -173,54 +200,8 @@ Instructions:
 -----
  - créez une **function** qui execute ```console.log('hello world')``` et appelez la
  - créez une **function** qui **retourne** la valeur **42**, et **stockez la dans une variable** ( puis faites un console log de cette variable )
- - créez une **function** qui ajoute 3 à un nombre en paramètre
+ - créez une **function** qui **ajoute 3** à un **nombre** qui sera un **paramètre**
  - creez une **function** qui prend age et année de naissance en paramètre, et retourne la somme des deux
  - creez une **function** qui prend **prenom** et **nom** en **paramètre**, et retourne la somme des deux ( avec l'espace ;) )
 
 
-
-
-
-
-// créez une variable avec votre prénom
-// créez une autre variable avec votre nom
-// créez une variable qui contient votre nom et prénom(en utilisant les deux premières variables) avec un espace séparant les deux(interdit de mettre l'espace dans le prénom wink )
-// faites un console.log de cette troisième variable pour vérifier le résultat
-
-function ajouteDeux(nombre) {
-	return nombre + 2;
-}
-
-var value = 4;
-var result = ajouteDeux(value);
-
-//
-
-//
-
-//
-
-// var anneeDeNaissance1 = 1970;
-// var anneeDeNaissance2 = 1967;
-
-// function donneMonNom(nom, prenom, age, ville) {
-// 	console.log('coucou, je suis : ' + nom);
-// 	// return anneeEnCours - annee;
-// }
-function donneMonNomMAx() {
-	console.log('coucou, je suis Max');
-	// return anneeEnCours - annee;
-}
-function donneMonNomJohn() {
-	console.log('coucou, je suis John');
-	// return anneeEnCours - annee;
-}
-
-// const age1 = donneMonAge(anneeDeNaissance1);
-// const age2 = donneMonAge(anneeDeNaissance2);
-
-// console.log(age1);
-// console.log(age2);
-
-// console.log(donneMonNom('MAx', 'garenne'));
-console.log(donneMonNomMAx());
