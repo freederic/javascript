@@ -202,6 +202,6 @@ Instructions:
  - créez une **function** qui **retourne** la valeur **42**, et **stockez la dans une variable** ( puis faites un console log de cette variable )
  - créez une **function** qui **ajoute 3** à un **nombre** qui sera un **paramètre**
  - creez une **function** qui prend age et année de naissance en paramètre, et retourne la somme des deux
- - creez une **function** qui prend **prenom** et **nom** en **paramètre**, et retourne la somme des deux ( avec l'espace ;) )
+ - creez une **function** qui prend **prenom** et **nom** en **paramètres**, et retourne la somme des deux ( avec l'espace ;) )
 
 
