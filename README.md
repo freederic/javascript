@@ -127,7 +127,47 @@ function faisQqch() {
 }
 console.log(dansMaFunction) // renvoie une error car ici, dansMaFunction n'est pas défini ! 
 ```
+### Les paramètres
 
+Les **paramètres** permettent de rendre les functions un petit peu plus **souples**.
+**Au lieu** de lui faire faire **systématiquement** le **même** calcul, et donc de lui demander de **connaitre à l'avance** les valeurs avec lesquelles elle devra lancer ses instructions, on lui propose d'appliquer un traitement identique sur une ou plusieurs "variables", dont **elle ne connait pas encore les valeurs**. **Ces "variables" sont les paramètres**.
+
+Au moment de l'éxecution, **lorsque** l'on **appellera** la function, le(s) **paramètre**(s) aura/auront alors la/les **valeur**(s) qui lui a/ont été donnée(s) lors de l'appel.
+
+On a l'équivalent en math :
+
+```f(x) = x + 2 ```
+
+( pour tout x renvoie x + 2 , x ici n'est pas défini mais le traitement qu'on lui applique sera toujours d'additionner 2 )
+
+```y = f(3)``` // la variable y est le resultat de f(3), soit 3 + 2 = **5**
+
+( ici on appelle f et on fixe la valeur de x à 3 juste pour cette fois.)
+
+
+```javascript
+
+
+
+function donneMonAge(annee) {
+	var anneeEnCours = 2019;
+    // ici annee n'a pas de valeur particulière, c'est lors de l'appel qu'on le fixera.
+    // ceci dit on veut quand même pouvoir décrire ce qu'on veut faire de ce paramètre, il faut donc lui donner un nom pour le manipuler :)
+	return anneeEnCours - annee;
+}
+var anneeDeNaissance1 = 1970;
+var anneeDeNaissance1 = 1967;
+// j'appelle mes deux fonctions, en leur passant une valeur différente ( stockée dans les deux variable)
+const age1 = donneMonAge(anneeDeNaissance1);
+const age2 = donneMonAge(anneeDeNaissance2);
+
+// je peux aussi bien appeler la function avec une valeur directement,
+const age3 = donneMonAge(1990);
+
+console.log(age1) // 49
+console.log(age2) // 52
+console.log(age3) // 29
+```
 
 Instructions:
 -----
@@ -136,4 +176,51 @@ Instructions:
  - créez une **function** qui ajoute 3 à un nombre en paramètre
  - creez une **function** qui prend age et année de naissance en paramètre, et retourne la somme des deux
  - creez une **function** qui prend **prenom** et **nom** en **paramètre**, et retourne la somme des deux ( avec l'espace ;) )
- - 
+
+
+
+
+
+
+// créez une variable avec votre prénom
+// créez une autre variable avec votre nom
+// créez une variable qui contient votre nom et prénom(en utilisant les deux premières variables) avec un espace séparant les deux(interdit de mettre l'espace dans le prénom wink )
+// faites un console.log de cette troisième variable pour vérifier le résultat
+
+function ajouteDeux(nombre) {
+	return nombre + 2;
+}
+
+var value = 4;
+var result = ajouteDeux(value);
+
+//
+
+//
+
+//
+
+// var anneeDeNaissance1 = 1970;
+// var anneeDeNaissance2 = 1967;
+
+// function donneMonNom(nom, prenom, age, ville) {
+// 	console.log('coucou, je suis : ' + nom);
+// 	// return anneeEnCours - annee;
+// }
+function donneMonNomMAx() {
+	console.log('coucou, je suis Max');
+	// return anneeEnCours - annee;
+}
+function donneMonNomJohn() {
+	console.log('coucou, je suis John');
+	// return anneeEnCours - annee;
+}
+
+// const age1 = donneMonAge(anneeDeNaissance1);
+// const age2 = donneMonAge(anneeDeNaissance2);
+
+// console.log(age1);
+// console.log(age2);
+
+// console.log(donneMonNom('MAx', 'garenne'));
+console.log(donneMonNomMAx());
