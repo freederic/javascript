@@ -195,7 +195,7 @@ console.log(age1) // 49
 console.log(age2) // 52
 console.log(age3) // 29
 
-// autre exemple :heart_eyes:
+// autre exemple
 function calculPoidsSemoulePourCouscous(nombreDinvite) {
 	var poidsDelaSemouleParPersonne = 100;
 	return poidsDelaSemouleParPersonne * nombreDinvite;
