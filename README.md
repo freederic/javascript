@@ -64,6 +64,118 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 - faites un ```console.log``` de cette **troisième** variable pour **vérifier le résultat**
 
 
+# TP Conditions 
+
+Contexte
+-----
+
+les programmes ont besoin d'effectuer certaines tâches en fonction de valeurs qui peuvent être différentes.
+Il existe en JS un type qu'on appelle boolean :  il contient les valeurs vrai ( true ) et faux ( false ).
+Il existe également des opérateurs de comparaison dont le resultat est un boolean :
+
+```javascript
+ceci && cela ( vrai et vrai ? )
+ceci === cela ( les deux sont égaux ? )
+```
+Regardez le [cours OC](https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1917384-les-conditions) pour plus de détail
+
+
+Exemple
+-------
+
+```javascript
+var jourDeLaSemaine = 'Lundi';
+
+switch (test) {
+	case 'Lundi':
+		alert('Lundi des patates');
+		break;
+
+	case 'Mardi':
+		alert('Mardi des patates');
+		break;
+
+	case 'Mercredi':
+		alert('Mercredi des patates aussi');
+		break;
+
+	default:
+		alert('boh surement des patates');
+		break;
+}
+
+```
+
+
+Instructions
+-----
+
+* switch 1.1
+
+créer un programme qui pose une question sur le prénom de la personne
+en utilisant switch :
+si le nom est Sarah : 'Sarah Connor ?'
+si le nom est Siri : 'Je n'ai pas compris votre question ?'
+ajouter deux autres prénoms et réponses associées de votre choix
+sinon, afficher : oh! c'est un joli prénom
+
+* switch 1.2
+
+créer un programme qui pose une question sur l'age de la personne
+en utilisant switch :
+si l'age est 18, alors utiliser alert() pour afficher : "bravo, vous êtes majeur(e)! "
+si l'age est 42 : afficher "c'est la réponse universelle "
+si l'age est 100 : afficher : "incroyable, vous êtes centenaire !!"
+sinon, afficher : oh! vous avez <age rentré par l'utilisateur>
+
+
+```javascript
+// if
+var condition = true;
+
+if (conditionTest) {
+	alert('Fonctionne !');
+}
+
+// if + else
+var conditionTest = 'Fonctionnera ? Fonctionnera pas ?';
+
+if (conditionTest) {
+	alert('Fonctionne !');
+} else {
+	alert('Ne fonctionne pas !');
+}
+// if + else if + else
+
+var premiereCondition = 'Fonctionnera ? Fonctionnera pas ?';
+var autreCondition = true;
+if (premiereCondition && autreCondition) {
+	alert('Fonctionne ! et vrai !');
+} else if (conditionTest2) {
+	alert('Fonctionne ! et vrai !');
+} else {
+	alert('Ne fonctionne pas !');
+}
+```
+
+instructions
+-----
+créer un programme qui pose deux questions grâce à prompt
+1) quel est votre age
+2) quel est votre sexe
+
+en utilisant if else, else if, et  en fonction
+des valeurs rentrées, vous devrez proposer plusieurs réponses :
+1) je suis une femme et je suis majeure
+2) je suis un homme et je suis majeur
+3) je suis une femme et je suis mineure
+4) je suis un homme et je suis mineur
+
+Attention, vous aurez toujours une chaine de caractère via prompt,
+utiliser Number(<votreinput>) pour convertir l'age en nombre et faire les comparaisons
+
+
+
 # TP Function
 
 Contexte 
