@@ -2,7 +2,7 @@
 
 <!-- aller [ici](https://adrar-tps.github.io/javascript/) -->
 
-# où faire du javascript ?
+# Où faire du javascript ?
 
 - dans l'onglet console de votre navigateur
 - dans un fichier javascript, lié à un fichier html que vous aurez lié ( regarder la balise ```<script>```)
@@ -11,8 +11,7 @@
 
 # TP Variables
 
-Ressources
-----
+### Ressources
 - http://www.coursweb.ch/javascript/variables.html
 
 - https://www.culture-informatique.net/japprends-a-programmer-variables/
@@ -21,8 +20,7 @@ Ressources
 
 - https://fr.wikipedia.org/wiki/Variable_(informatique)
 
-Instructions
-----
+### Instructions
 
 - créez une **variable** avec votre **âge**
 - créez une autre **variable** avec votre **année de naissance**
@@ -38,8 +36,7 @@ Rien n'empêche de combiner plusieurs variables d'affilée, ou de les combiner a
 
 # TP Conditions 
 
-Contexte
------
+### Contexte
 
 les programmes ont besoin d'effectuer certaines tâches en fonction de valeurs qui peuvent être différentes.
 Il existe en JS un type qu'on appelle boolean :  il contient les valeurs vrai ( true ) et faux ( false ).
@@ -52,8 +49,7 @@ ceci === cela ( les deux sont égaux ? )
 Regardez le [cours OC](https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1917384-les-conditions) pour plus de détail
 
 
-Exemple
--------
+### Exemple
 
 ```javascript
 var jourDeLaSemaine = 'Lundi';
@@ -79,8 +75,7 @@ switch (test) {
 ```
 
 
-Instructions
------
+### Instructions
 
 * switch 1.1
 
@@ -130,9 +125,9 @@ if (premiereCondition && autreCondition) {
 }
 ```
 
-instructions
------
-créer un programme qui pose deux questions grâce à prompt
+### instructions
+
+Créer un programme qui pose deux questions grâce à prompt
 1) quel est votre age
 2) quel est votre sexe
 
@@ -149,14 +144,33 @@ utiliser Number(<votreinput>) pour convertir l'age en nombre et faire les compar
 
 # TP Boucles 
 
-Contexte 
------
+### Contexte 
 
-une boucle permet d'éxecuter une ou plusieur instructions un certain nombre de fois.
+une boucle permet d'éxecuter une ou plusieurs instructions un certain nombre de fois.
 Voir cette [partie du cours OC](https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1917498-les-boucles)
+On évite ainsi la répétition, et parfois on ne sait pas à l'avance combien de fois on devra répéter l'instruction
 
-Instructions
------
+
+## Boucle for
+
+### Exemple
+
+
+```javascript
+let compteur;
+for (compteur = 1; compteur <= 5; compteur++) {
+  console.log(compteur);
+}
+
+// voici la syntaxe d'une boucle.
+// on commence par initialiser une variable qui sert de compteur
+// compteur = 1 est une instruction lancée uniquement avant le premier tour de boucle
+// compteur <= 5 est une instruction lancée avant chaque tour de boucle.
+// si le résultat est true, l'instruction dans la boucle est lancée, sinon, la boucle s'arrête.
+// compteur++ est une instruction lancée après chaque tour de boucle.
+```
+
+### Instructions
 
 Le fizzBuzz :
 Créer un programme qui utilisera une boucle qui ira de 0 à 100.
@@ -165,10 +179,29 @@ On appellera afficher le fait d'utiliser console.log
 Quand le nombre est un multiple de 3 la fonction doit afficher « fizz », quand le nombre est un multiple de 5 la fonction doit afficher « buzz » et quand le nombre est un multiple de 3 et 5 la fonction doit afficher « fizzbuzz » dans tous les autres cas elle doit afficher le nombre.
 
 
+## Boucle while
+
+### Exemple 
+
+```javascript
+console.log("On commence la devinette");
+let input;
+let secret = 'supersecret';
+while (input !== secret) {
+  input = prompt('quel est le secret ?');
+}
+console.log("Bravo !");
+
+```
+
+### Instructions
+
+En suivant l'exemple, créer un programme qui demande de rentrer un mot.
+La boucle while devra s'éxecuter tant que la longueur du mot rentré par l'utilisateur est inférieure à 10.
+
 # TP Function
 
-Contexte 
------
+### Contexte 
 
 Une **fonction** est un élément du langage javascript qui permet de **contenir et d'éxecuter une ou plusieurs instructions** à la suite. 
 Pratique quand on veut répéter plusieurs fois les mêmes instructions ! C'est **l'équivalent d'une recette de cuisine**.
