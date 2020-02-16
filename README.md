@@ -2,34 +2,6 @@
 
 <!-- aller [ici](https://adrar-tps.github.io/javascript/) -->
 
-Ressources 
-===
-
-pour les ressources pratiques : 
-----
-
-
-### exercices (FR)
-- http://odyssey.sdlm.be/
-- https://www.codingame.com/playgrounds/3777/exercices-de-javascript-pour-debutants-en-informatique/javascript---les-variables
-
-
-### exercices EN
-- https://www.codecademy.com/learn/introduction-to-javascript
-- https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
-
-
-### Des exemples simples 
-- https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
-  
-
-Pour la lecture et la compréhension 
-----
-[cours OpenClassrooms](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript)
-
-
-
-
 # où faire du javascript ?
 
 - dans l'onglet console de votre navigateur
@@ -344,4 +316,31 @@ Instructions:
  - creez une **fonction** qui prend **prenom** et **nom** en **paramètres**, et retourne la somme des deux ( avec l'espace ;) )
  - faites un **console.log** du **résultat**
 
+
+
+
+Ressources 
+===
+
+pour les ressources pratiques : 
+----
+
+
+### exercices (FR)
+- http://odyssey.sdlm.be/
+- https://www.codingame.com/playgrounds/3777/exercices-de-javascript-pour-debutants-en-informatique/javascript---les-variables
+
+
+### exercices EN
+- https://www.codecademy.com/learn/introduction-to-javascript
+- https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
+
+
+### Des exemples simples 
+- https://jenseign.com/apprendre-html-css/documentation-theorie/javascript-les-bases/
+  
+
+Pour la lecture et la compréhension 
+----
+[cours OpenClassrooms](https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript)
 
