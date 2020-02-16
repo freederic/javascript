@@ -113,20 +113,20 @@ Instructions
 * switch 1.1
 
 créer un programme qui pose une question sur le prénom de la personne
-en utilisant switch :
-si le nom est Sarah : 'Sarah Connor ?'
-si le nom est Siri : 'Je n'ai pas compris votre question ?'
-ajouter deux autres prénoms et réponses associées de votre choix
-sinon, afficher : oh! c'est un joli prénom
+- en utilisant switch :
+- si le nom est Sarah : 'Sarah Connor ?'
+- si le nom est Siri : 'Je n'ai pas compris votre question ?'
+- ajouter deux autres prénoms et réponses associées de votre choix
+- sinon, afficher : oh! c'est un joli prénom
 
 * switch 1.2
 
 créer un programme qui pose une question sur l'age de la personne
-en utilisant switch :
-si l'age est 18, alors utiliser alert() pour afficher : "bravo, vous êtes majeur(e)! "
-si l'age est 42 : afficher "c'est la réponse universelle "
-si l'age est 100 : afficher : "incroyable, vous êtes centenaire !!"
-sinon, afficher : oh! vous avez <age rentré par l'utilisateur>
+- en utilisant switch :
+- si l'age est 18, alors utiliser alert() pour afficher : "bravo, vous êtes majeur(e)! "
+- si l'age est 42 : afficher "c'est la réponse universelle "
+- si l'age est 100 : afficher : "incroyable, vous êtes centenaire !!"
+- sinon, afficher : oh! vous avez <age rentré par l'utilisateur>
 
 
 ```javascript
@@ -174,6 +174,23 @@ des valeurs rentrées, vous devrez proposer plusieurs réponses :
 Attention, vous aurez toujours une chaine de caractère via prompt,
 utiliser Number(<votreinput>) pour convertir l'age en nombre et faire les comparaisons
 
+
+# TP Boucles 
+
+Contexte 
+-----
+
+une boucle permet d'éxecuter une ou plusieur instructions un certain nombre de fois.
+Voir cette [partie du cours OC](https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1917498-les-boucles)
+
+Instructions
+-----
+
+Le fizzBuzz :
+Créer un programme qui utilisera une boucle qui ira de 0 à 100.
+On appellera "nombre" le tour de boucle en cours.
+On appellera afficher le fait d'utiliser console.log
+Quand le nombre est un multiple de 3 la fonction doit afficher « fizz », quand le nombre est un multiple de 5 la fonction doit afficher « buzz » et quand le nombre est un multiple de 3 et 5 la fonction doit afficher « fizzbuzz » dans tous les autres cas elle doit afficher le nombre.
 
 
 # TP Function
